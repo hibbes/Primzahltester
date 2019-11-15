@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 
-public class Erastothenes {
+public class Primzahltester {
 
 	static int max = 100000;
 	
@@ -71,7 +71,8 @@ public class Erastothenes {
 		   
 		private static boolean[] erzeugeArray(int max){
 			boolean[] primzahlen = new boolean[max+1];
-			Arrays.fill(primzahlen, Boolean.TRUE); 
+			for(int i=0; i<=max;i++){primzahlen[i]=true;}
+			
 			primzahlen[0]=false;
 			primzahlen[1]=false;
 			
